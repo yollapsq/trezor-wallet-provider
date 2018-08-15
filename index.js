@@ -2,8 +2,7 @@
 
 var HookedWalletSubprovider = require('web3-provider-engine/subproviders/hooked-wallet.js');
 var Transaction = require('ethereumjs-tx');
-var trezor = require('trezor.js-node');
-var util = require('util');
+var trezor = require('trezor.js');
 var bippath = require('bip32-path')
 
 var debug = false;

@@ -23,8 +23,8 @@
   },
   "homepage": "https://github.com/daonomic/trezor-wallet-provider#readme",
   "dependencies": {
-    "bip32-path": "^0.4.2",
-    "trezor.js-node": "6.11.3",
+    "bip32-path": "0.4.2",
+    "trezor.js": "6.17.6",
     "web3-provider-engine": "14.0.5",
     "child_process": "1.0.2"
   }
