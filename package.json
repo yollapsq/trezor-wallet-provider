@@ -27,6 +27,6 @@
     "child_process": "1.0.2",
     "trezor.js": "6.17.6",
     "web3": "^0.18.2",
-    "web3-provider-engine": "^8.4.0",
+    "web3-provider-engine": "^8.4.0"
   }
 }
