@@ -25,7 +25,8 @@
   "dependencies": {
     "bip32-path": "0.4.2",
     "trezor.js": "6.17.6",
-    "web3-provider-engine": "14.0.5",
+		"web3": "^0.18.2",
+    "web3-provider-engine": "^8.4.0",  
     "child_process": "1.0.2"
   }
 }
