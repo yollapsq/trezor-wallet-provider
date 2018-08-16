@@ -9,8 +9,6 @@ function TrezorWalletProvider(provider_url, address_index = 0) {
   console.info('Please plug the Trezor and enter your pin in the popped up window. (If the Trezor is already plugged, reconnect it.)');
 
   this.engine = new ProviderEngine();
-  this.engine.addProvider(new Web3Subprovider(new Web3.providers.HttpProvider(provider_url)));
-  this.engine.addProvider(new FiltersSubprovider());
     
   const trezorProvider = new TrezorProvider("m/44'/60'/0'/0/" + address_index);
 
@@ -27,6 +25,8 @@ function TrezorWalletProvider(provider_url, address_index = 0) {
     }, 1000)
   }).then((data) => {
   	this.engine.addProvider(trezorProvider);
+    this.engine.addProvider(new Web3Subprovider(new Web3.providers.HttpProvider(provider_url)));
+    this.engine.addProvider(new FiltersSubprovider());  	
     this.engine.start();
   }).catch((err) => { 
   	console.error(err);
